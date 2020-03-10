@@ -1,5 +1,4 @@
-# CompilerDesignProjectDescription
-Description of Compiler Design Project 
+
 
 <font size="6">MiniJava</font><br>
 <font size="4">Compiler Design Project - Spring 98</font><br>
