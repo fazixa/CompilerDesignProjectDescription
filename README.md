@@ -229,7 +229,53 @@ power[1] = 5;
 
 /// dastrasi be yek field az yek class??
 /// import is not in java
-///this??
+
+## This Keyword
+<p dir="rtl">
+کلید واژه this  به کلاسیکه در آن قرار داریم اشاره می کند  
+<br>
+راه های استفاده از this   در Minijava  به شرح زیر می باشد:
+
+<p>
+<ul dir="rtl">
+<li> Using ‘this’ keyword to refer current class instance variables؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟ </li>
+
+<li>?????????????برای برگرداندن instace ای از کلاس فعلی </li>
+
+<div dir="ltr"> 
+
+```java
+class Test 
+{ 
+    //Method that returns current class instance 
+    Test get() 
+    { 
+        return this; 
+    } 
+}
+```
+</div>
+<li> دسترسی به متد کلاس </li>
+
+<div dir="ltr"> 
+
+```java
+class Test { 
+    void display() 
+    { 
+        // calling function show() 
+        this.show(); 
+    } 
+    void show() { 
+        ...
+    } 
+}
+```
+
+</div>
+
+</ul>
+
 
 ## Data Types
 
