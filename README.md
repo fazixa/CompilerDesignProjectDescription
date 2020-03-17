@@ -49,9 +49,10 @@ import Digimon;
 ## Interface Declaration
 <ul dir="rtl">
 <li>تعریف آن همانند کلاس بود با این تفاوت که متد های آن به صورت <a href="#abstract-method-declaration">abstract</a>  می باشد و از آنها برا ساخت ابجکت نمی توان استفاده کرد.</li>
-<li> در مورد فیلد های یک interface عملیات انتساب دقیقا پس از تعریف آنها صورت می گیرد.
-<li> فیلد های یک اینترفیس به طور پیش فرض  static, public  و final(فقط یک بار مقداردهی می شوند) هستند.</li>
+<li> عملیات انتساب فیلد های یک interface  دقیقا پس از تعریف آنها صورت می گیرد.
+<li> فیلد های یک اینترفیس به طور پیش فرض  static, public  و final(فقط یک بار مقداردهی می شوند) هستند.?????????????????</li>
 <li>کلاسی که اینترفیس را implements می کند، باید تمامی متدهای آن را پیاده سازی کند.</li>
+<li>اینترفیس نمی تواند از کلاسی ارث ببرد.</li>
 </ul>
 
 
@@ -107,6 +108,8 @@ class Pikachu extends Pokemon {
 
 <ul dir="rtl">
 <li><p>هر برنامه شامل فقط یک کلاس main  می باشد که به صورت تعریف می شود
+</p></li>
+<li><p>کلاس main تنها یک متد main  دارد وخروجی آن void  می باشد. همچنین این متد تنها متد static  در برنامه می باشد.
 </p></li>
 </ul>
 
@@ -178,7 +181,7 @@ public static void attack(Pokemon target, int amount) {
 ## Abstract Method Declaration
 <ul dir="rtl">
 <li>متد های interface بدنه ندارند </li>
-<li>همچنین در هنگام تعریف به صورت پیش فرض abstract و public هستند</li>
+<li>همچنین در هنگام تعریف به صورت پیش فرض abstract و public)هستند و  هیچگاه به صورت private  نمیتوان آنها را تعریف کرد ??????????????</li>
 </ul>
 
 ```java
@@ -228,7 +231,7 @@ power[1] = 5;
 ??? eshtebahe syntaxesh
 
 /// dastrasi be yek field az yek class??
-/// import is not in java
+
 
 ## This Keyword
 <p dir="rtl">
