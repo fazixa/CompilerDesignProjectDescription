@@ -1,14 +1,12 @@
 
 
-<font size="6">MiniJava</font><br>
-<font size="4">Compiler Design Project - Spring 98</font><br>
-<font size="2">Najme Habibi, Faezeh Shayesteh</font>
+<font size="6">MiniJava Documentation</font><br>
 <hr>
 
 
 
 
-## About MiniJava
+
 
 
 
