@@ -19,4 +19,6 @@
 <li>در صورت مشاهده هر گونه تقلب در هر یک از فاز های پروژه به تمامی افراد نمره -100 تعلق می گیرد.</li>
 </ul>
 
-#### Markdowns in this repository were made Farsi compatible with the help of [Moratab](https://github.com/sobhe/moratab)
+<br>
+
+ - Markdowns in this repository were made Farsi compatible with the help of [Moratab](https://github.com/sobhe/moratab)
