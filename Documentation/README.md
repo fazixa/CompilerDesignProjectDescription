@@ -1,7 +1,6 @@
 
 
-<font size="6">MiniJava Documentation</font><br>
-<hr>
+# MiniJava Documentation
 
 
 
@@ -86,7 +85,7 @@ class PokeBall implements Ball {
 // Base Class 
 class Pokemon {
     public int damage() {
-    health -= 5;
+    health = health - 5;
     return health;
     } 
 }   
@@ -94,7 +93,7 @@ class Pokemon {
 class Pikachu extends Pokemon { 
     @Override
     public int damage() {
-    health -= 2;
+    health = health - 2;
     return health;
     } 
 } 
@@ -195,7 +194,7 @@ interface Pokemon {
 
 ```java
 if (health < 1) {
-  isAlive=0
+  isAlive = 0
 }
 ```
 
