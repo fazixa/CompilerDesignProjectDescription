@@ -83,7 +83,7 @@ class Classes {
 	}
 }
 
-class Base impelements Face{
+class Base implements Face{
 	int data;
 	public int set(int x) {
 		data = x;
