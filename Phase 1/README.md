@@ -125,7 +125,7 @@ interface Face{
 </p>
 
 #### Output:
-```java
+```
 program start{
 	import class: Nothing
 	main class: Classes{
