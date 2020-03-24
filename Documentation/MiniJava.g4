@@ -11,12 +11,12 @@ mainClass
 :	'class' Identifier '{' 'public' 'static' 'void' 'main' '(' 'String' '[' ']' Identifier ')' '{' statement* '}' '}';
 
 classDeclaration
-:	 'class' name = Identifier ('extends' Identifier)? ( 'implements' Identifier ( ',' Identifier)* )? '{' fieldDeclaration* methodDeclaration* '}';
+:	 'class' Identifier ('extends' Identifier)? ( 'implements' Identifier ( ',' Identifier)* )? '{' fieldDeclaration* methodDeclaration* '}';
 
 interfaceDeclaration: 'interface' Identifier '{' fieldDeclaration* interfaceMethodDeclaration*	'}';
 
 interfaceMethodDeclaration
-:	 (accessModifier)? returnType Identifier '(' parameterList? ')' ';';  //default public, abstract
+:	 (accessModifier)? returnType Identifier '(' parameterList? ')' ';';  
 
 fieldDeclaration
 :	 (accessModifier)? (Final)? type Identifier (EQ expression)?';'
