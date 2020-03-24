@@ -135,7 +135,7 @@ class Pokemon {
    private int speed;
    boolean legendary;
    Pokeball ball;
-   int[] powers;
+   int[] powers = {1, 2, 3};
    Move[] moves = new Moves[maxMovesNum];
 }
 ```
@@ -178,7 +178,7 @@ public static void attack(Pokemon target, int amount) {
 ## Abstract Method Declaration
 <ul dir="rtl">
 <li>متد های interface بدنه ندارند </li>
-<li>همچنین در هنگام تعریف به صورت پیش فرض abstract و public)هستند و  هیچگاه به صورت private  نمیتوان آنها را تعریف کرد ??????????????</li>
+<li>همچنین در هنگام تعریف به صورت پیش فرض abstract و public)هستند و  هیچگاه به صورت private  نمیتوان آنها را تعریف کرد </li>
 </ul>
 
 ```java
@@ -223,12 +223,6 @@ amount = power[4];
 ```java
 power[1] = 5;
 ````
-
-#### intarrayInstantiationExpression
-??? eshtebahe syntaxesh
-
-/// dastrasi be yek field az yek class??
-
 
 ## This Keyword
 <p dir="rtl">
