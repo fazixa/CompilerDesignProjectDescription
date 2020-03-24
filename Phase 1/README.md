@@ -45,11 +45,11 @@ class: [class name]/ class parents: ([parent name], )*{
 	[class body]
 }
 
-Interface: [interface name]{
+interface: [interface name]{
 	[interface body]
 }
 
-Interface method: [method name]/ return type=[return type]/ access modifier=[access modifier]
+interface method: [method name]/ return type=[return type]/ access modifier=[access modifier]
 (parameters list= [  ([[parameter type] [parameter name]], )+])?
 
 field: [field name]/ type=[type]/ access modifier=[access modifier] 
