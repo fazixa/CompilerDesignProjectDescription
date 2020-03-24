@@ -31,7 +31,7 @@
 
 </p>
 
-```java
+```
 program start{
 	[program body]
 }
