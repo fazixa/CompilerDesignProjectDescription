@@ -7,6 +7,14 @@
 
 
 
+## Introduction
+<div>
+<ul dir="rtl">
+<li>
+	زبان MiniJava یک زبان شی گراست که برخی از قابلیت های زبان java را داراست.
+</li>
+</ul>
+</div>
 
 
 ## Class Declaration
