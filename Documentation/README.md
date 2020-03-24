@@ -164,7 +164,7 @@ public attack() {
 
 ```java
 public int damage(int amount) {
-    health -= amount;
+    health = health - amount;
     return health;
 }
 
@@ -230,11 +230,6 @@ power[1] = 5;
 <br>
 راه های استفاده از this   در Minijava  به شرح زیر می باشد:
 
-<p>
-<ul dir="rtl">
-<li> Using ‘this’ keyword to refer current class instance variables؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟ </li>
-
-<li>?????????????برای برگرداندن instace ای از کلاس فعلی </li>
 
 <div dir="ltr"> 
 
