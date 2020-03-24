@@ -120,10 +120,6 @@ interface Face{
 
 ```
 
-<p dir="rtl"> 
-* نوشتن کد های ورودی به عهده خودتان است
-</p>
-
 #### Output:
 ```
 program start{
