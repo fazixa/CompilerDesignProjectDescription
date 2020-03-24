@@ -17,7 +17,7 @@
 	هر برنامه زبان MiniJava شامل یک فایل با فرمت jm. است
 </li>
 <li>
-ست
+گرامر زبان در <a href="https://github.com/fazixa/CompilerDesignProjectDescription/blob/master/Documentation/MiniJava.g4">این قسمت </a> قابل مشاهده است.
 </li>
 	
 </ul>
