@@ -19,7 +19,8 @@
 <li>
 گرامر زبان در <a href="https://github.com/fazixa/CompilerDesignProjectDescription/blob/master/Documentation/MiniJava.g4">این قسمت </a> قابل مشاهده است.
 </li>
-	
+
+
 </ul>
 </div>
 
@@ -33,6 +34,11 @@
 </li>
 <li>هر کلاس می تواند حداکثر از یک کلاس <a href="#inheritance">ارث بری</a> کند (با استفاده از کلید واژه extends )  به این معنی که می تواند  از فیلد ها و متد های پدرش استفاده نماید.  </li>
 <li>همچنین یک کلاس میتواند از یک یا چند  <a href="#interface-declaration">interface</a> را پیاده سازی کند (با استفاده از کلمه کلیدی implements). </li>
+
+<li>
+کلاس  <a href="#predefined-classes">Object</a> به صورت پیش فرض پدر تمامی کلاس ها می باشد.
+</li>
+	
 </ul>
 </div>
 
@@ -160,7 +166,7 @@ class Pokemon {
 ## Local Variable Declaration
 
 <ul dir="rtl" >
-<li><p>متغیر ها همانند خصیصه ها مقدار دهی می شوند با این تفاوت که متغیر ها داخل متد ها تعریف می شوند</p></li>
+<li><p>متغیر ها همانند خصیصه ها مقدار دهی می شوند با این تفاوت که متغیر ها داخل متد ها و nested stament ها تعریف می شوند</p></li>
 </ul>
 
 ```java
@@ -308,12 +314,16 @@ class Test {
 
 <br>
 
+## Predefined Classes
+
+<p dir="rtl">در زبان مینی جاوا به طور پیش فرض کلاس های  Striing و Object وجود دارند</p>
+
 ## Predefined Methods
 <p dir="rtl">در زبان Minijava توابع و فیلدهای از پیش تعریف شده ای وجود دارند که عبارت اند از:</p>
 
 #### println Method
 <p dir="rtl">
-این تابع به طور ضمنی تعریف شده است و می تواند یک مقدار intو boolean را دریافت کند وآن را بر روی کنسول چاپ کند</p>
+این تابع به طور ضمنی تعریف شده است و می تواند یک مقدار intو boolean, string را دریافت کند وآن را بر روی کنسول چاپ کند</p>
 
 ```java
 System.out.println(amount);
@@ -356,3 +366,15 @@ print(array.length);
  |Operator|Description|Example
  |-----|-----|----|
  <(Less Than)|Checks if the value of the left opernad is less than the value of right operand, if yes then  the condition becoms true.| (A < B) is true
+
+ ## Comments
+ <p dir="rtl"> در زبان مینی جاوا دو نوع کامنت گذاری وجودا دارد.
+ </p>
+ <ul dir="rtl">
+ <li>
+  starts with /*, ends with */, and may be nested 
+  </li>
+  <li>
+  begins with // and goes to the end of the line
+  </li>
+  </ul>
