@@ -51,18 +51,18 @@ class Pokemon{
 
 <br>
 
-## Import Class
+<!-- ## Import Class
 <ul dir="rtl">
 <li> برای استفاده از کلاس های از پیش تعریف شده باید آنها را قبل از شروع کلاس ها import کنیم.
   </li>
-</ul>
+</ul> -->
 
-```java
+<!-- ```java
 import Pokemon;
 import Digimon;
 ```
 
-<br>
+<br> -->
 
 ## Interface Declaration
 <ul dir="rtl">

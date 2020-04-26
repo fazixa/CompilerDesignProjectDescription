@@ -32,7 +32,7 @@
 
 
 
-<img src="http://s11.picofile.com/file/8395066334/Capture_Copy.PNG" alt="scopes" width="300"/>
+<img src="http://s11.picofile.com/file/8395066334/Capture_Copy.PNG" alt="scopes" width="500"/>
 
 
 <p dir="rtl">
@@ -51,86 +51,83 @@
 
 input ([get raw]()):
 ```java
-1
-2
-3
-4
-5
-6    class Classes {
-7        public static void main(String[] a) {
-8            Base b;
-9            Derived d;
-10            int x;
-11            b = new Base();
-12            d = new Derived();
-13            b = d;
-14            System.out.println(b.set(1));
-15            System.out.println(b.set(3));
-16        }
-17    }
-18
-19    class Rest implements Nothing {
-20
-21    }
-22
-23    class Base extends Rest implements Face, MyFace {
-24        int[] data;
-25        private Rest[] d;
-26        private int set(int[] x) {
-27            data = x;
-28            return data;
-29        }
-30        public int get() {
-31            return data;
-32        }
-33        private int test() {
-34
-35            while (1)
-36                int x;
-37
-38            int b; {
-39                int t;
-40                a = 0;
-41                b = 5;
-42            }
-43            if (true) {
-44                bool n; {}
+1	class Classes {
+2		public static void main(String[] a) {
+3			Base b;
+4			Derived d;
+5			int x;
+6			b = new Base();
+7			d = new Derived();
+8			b = d;
+9			System.out.println(b.set(1));
+10			System.out.println(b.set(3));
+11		}
+12	}
+13
+14	class Rest implements Nothing{
+15
+16	}
+17
+18	class Base extends Rest implements Face,MyFace{
+19		int[] data;
+20		private Rest[] d;
+21		private int set(int[] x) {
+22			data = x;
+23			return data;
+24		}
+25		public int get() {
+26			return data;
+27		}
+28		private int test(){
+29
+30		while(1)
+31			int x;
+32
+33			int b ;
+34			{
+35				int t;
+36				a = 0;
+37				b = 5;
+38			}
+39			if(true){
+40				bool n;
+41			{
+42			}
+43
+44			}
 45
-46            }
-47
-48            return a + b;
-49        }
+46			return a + b;
+47		}
+48
+49	}
 50
-51    }
+51	class Derived extends Base {
 52
-53    class Derived extends Base {
-54
-55        public int set(int x, C d) {
-56            data = x * 2; {
-57                Base[] t;
-58
-59            }
-60            if (a < 0)
-61                int a;
-62            return data;
-63        }
-64    }
-65
-66    class Hi {
-67        private void sayHi(int one, bool two, Hi three, int four) {}
-68    }
+53		public int set(int x, C d) {
+54			data = x * 2;
+55			{
+56						Base[] t;
+57
+58			}
+59			if (a<0)
+60				int a;
+61			return data;
+62		}
+63	}
+64
+65	class Hi {
+66		private void sayHi(int one, bool two, Hi three, int four){
+67		}
+68	}
 69
-70    interface Face {
-71        final int[] a = {
-72            1,
-73            2
-74        };
-75        int getFace(int s);
-76    }
-77
-78    interface MyFace {
-79        final String myFace = ":)";
-80    }
+70	interface Face{
+71		final int[] a = {1,2};
+72		int getFace(int s);
+73	}
+74
+75	interface MyFace{
+76		final String  myFace= ":)";
+77	}
 ```
 output ([get raw]()):
 ```java
@@ -362,7 +359,110 @@ Field: (name: myFace) (type: [classType = String, isDefined = true]) (accessModi
 <br>
 
 
+
+
+#### parameterItem:
+
+```java
+public String toString() {
+   return "Parameter: " + "(name: " + name + ") (type: " + type + ") (index: " + index + ")";
+}
+```
+<p dir="rtl">خروجی برای پارامتر های مختلف: <br>
+برای هر پارامتر باید index ان که نشان دهنده جایگاه پارامتر در ورودی های متد است چاپ شود  )شروع از 1(
+</p>
+
+```java
+Parameter: (name: four) (type: int) (index: 4)
+Parameter: (name: three) (type: [classType = Hi, isDefined = true]) (index: 3)
+Parameter: (name: one) (type: int) (index: 1)
+Parameter: (name: two) (type: bool) (index: 2)
+Parameter: (name: args) (type: array of [classType = String, isDefined = true]) (index: 1)
+Parameter: (name: x) (type: array of int) (index: 1)
+```
+<br>
+
+
+
+#### localVarItem:
+
+```java
+public String toString() {
+   return "LocalVar: " + "(name: " + name + ") (type: " + type + ")";
+}
+```
+<p dir="rtl"> خروجی برای متغیرهای لوکال مختلف:</p>
+
+```java
+LocalVar: (name: n) (type: bool)
+LocalVar: (name: t) (type: array of [classType = Base, isDefined = true])
+LocalVar: (name: d) (type: [classType = Derived, isDefined = true])
+LocalVar: (name: b) (type: [classType = Base, isDefined = true])
+```
+<br>
+
+
+#### Type
+##### Boolean:
+```java
+public String toString() {
+   return "bool";
+}
+```
+##### Int:
+```java
+public String toString() {
+   return "int";
+}
+```
+##### classType:
+```java
+public String toString() {
+   return "[classType = " + name + ", isDefined = " + isDefined + "]";
+}
+```
+<p dir="rtl"> 
+مقدار isDefined بیانگر این است که کلاس در برنامه تعریف شده است یانه.
+</p>
+
+<p dir="rtl"> خروجی برای تایپ کلاس مختلف:
+</p>
+```java
+[classType = Derived, isDefined = true]
+[classType = String, isDefined = true]
+[classType = C, isDefined = false]
+```
+<br>
+
+
+
+#### arrayType:
+
+```java
+public String toString() {
+   return "array of " + type.toString();
+}
+```
+<p dir="rtl"> خروجی برای متغیرهای لوکال مختلف:</p>
+
+```java
+array of [classType = Base, isDefined = true]
+array of int
+array of [classType = String, isDefined = true]
+```
+<br>
+
+<p dir="rtl">برای چاپ accessModifier:</p>
+
+```java
+“ACCESS_MODIFIER_PUBLIC” or “ACCESS_MODIFIER_PRIVATE”
+```
+<br>
+
+
 <h3 dir="rtl">نکات</h3>
+
+>  <p dir="rtl"> گرامر از فاز قبل مقداری تغییر یافته است  لطفا  <a href="https://github.com/fazixa/CompilerDesignProjectDescription/blob/master/Documentation/MiniJava.g4">گرامر جدید </a> را بگیرید <p>
 
 
 ><p dir="rtl">شماره خط  شروع هر اسکوپ را در ابتدا به همراه نام آن نمایش میدهیم<p>

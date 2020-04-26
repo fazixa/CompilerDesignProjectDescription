@@ -1,31 +1,31 @@
 grammar MiniJava;
 
 program
-:	importClass*  (mainClass) (classDeclaration | interfaceDeclaration)* EOF
+:	(mainClass) (classDeclaration | interfaceDeclaration)* EOF
 ;
-
-importClass
-:   'import' Identifier ';' ;
 
 mainClass
-:	'class' Identifier '{' 'public' 'static' 'void' 'main' '(' 'String' '[' ']' Identifier ')' '{' statement* '}' '}';
+:	'class' className = Identifier '{' mainMethod '}';
 
+mainMethod:
+ 'public' 'static' 'void' 'main' '(' type  Identifier ')' '{' statement* '}'
+;
 classDeclaration
-:	 'class' Identifier ('extends' Identifier)? ( 'implements' Identifier ( ',' Identifier)* )? '{' fieldDeclaration* methodDeclaration* '}';
+:	 'class' className = Identifier ('extends' parentName = Identifier)? ( 'implements' Identifier ( ',' Identifier)* )? '{' fieldDeclaration* methodDeclaration* '}';
 
-interfaceDeclaration: 'interface' Identifier '{' fieldDeclaration* interfaceMethodDeclaration*	'}';
+interfaceDeclaration: 'interface' interfaceName = Identifier '{' fieldDeclaration* interfaceMethodDeclaration*	'}';
 
 interfaceMethodDeclaration
-:	 (accessModifier)? returnType Identifier '(' parameterList? ')' ';';  
+:	 (accessModifier)? returnType methodName = Identifier '(' parameterList? ')' ';';
 
 fieldDeclaration
-:	 (accessModifier)? (Final)? type Identifier (EQ expression)?';'
+:	 (accessModifier)? (Final)? type fieldName = Identifier (EQ expression)?';'
 ;
 localDeclaration
-:	type Identifier ';';
+:	type verName = Identifier ';';
 
 methodDeclaration
-:	(Override)? (accessModifier)? returnType Identifier '(' parameterList? ')' '{' methodBody '}';
+:	(Override)? (accessModifier)? returnType methodName = Identifier '(' parameterList? ')' '{' methodBody '}';
 
 parameterList
 :   parameter (',' parameter)*
@@ -147,6 +147,9 @@ expression
 |   Identifier
 # identifierExpression
 
+|   String
+# stringLitExpression
+
 |   'this'
 # thisExpression
 
@@ -178,12 +181,16 @@ BooleanLiteral
 IntegerLiteral
 :	DecimalIntegerLiteral
 ;
+
 NullLiteral: 'null';
 
 Identifier
 :	JavaLetter JavaLetterOrDigit*
 ;
 
+String
+:   '"' (~'"')* '"'
+;
 
 Override
 : '@Override'
