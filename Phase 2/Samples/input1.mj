@@ -37,7 +37,7 @@ class Base extends Rest implements Face,MyFace{
 	        b = 5;
 	    }
 	    if(true){
-	        bool n;
+	        boolean n;
 	    {
 	    }
 
@@ -63,7 +63,7 @@ class Derived extends Base {
 }
 
 class Hi {
-    private void sayHi(int one, bool two, Hi three, int four){
+    private void sayHi(int one, boolean two, Hi three, int four){
     }
 }
 
