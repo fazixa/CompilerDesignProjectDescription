@@ -1,5 +1,5 @@
 class Classes {
-    public static void main(String[] a) {
+    public static void main(String[] args) {
 		Base b;
 		Derived d;
 		int x;
