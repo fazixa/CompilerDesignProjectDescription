@@ -214,6 +214,7 @@ Key = var_two  | Value = Parameter: (name: two) (type: bool) (index: 2)
 
 -------------  Face : 70  -------------
 Key = var_a  | Value = Field: (name: a) (type: array of int) (accessModifier: ACCESS_MODIFIER_PUBLIC)
+Key = method_getFace  | Value = Method: (name: getFace) (returnType: int) (accessModifier: ACCESS_MODIFIER_PUBLIC) (parametersType: [int , index: 1] )
 -----------------------------------------
 
 -------------  MyFace : 75  -------------
