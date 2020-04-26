@@ -52,7 +52,7 @@
 input ([get raw]()):
 ```java
 1	class Classes {
-2		public static void main(String[] a) {
+2		public static void main(String[] args) {
 3			Base b;
 4			Derived d;
 5			int x;
