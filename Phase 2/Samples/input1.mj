@@ -69,7 +69,6 @@ class Hi {
 
 interface Face{
     final int[] a = {1,2};
-    int getFace(int s);
 }
 
 interface MyFace{
