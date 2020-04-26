@@ -489,7 +489,7 @@ class Base{
 
 
 
->  <p dir="rtl"> 2 نمونه ورودی و خروجی در قسمت <a href="https://github.com/fazixa/CompilerDesignProjectDescription/blob/master/Documentation">Samples </a>  برای تست کردن کدتان آورده شده است <p>
+>  <p dir="rtl"> 2 نمونه ورودی و خروجی در قسمت <a href="https://github.com/fazixa/CompilerDesignProjectDescription/tree/master/Phase%202/Samples">Samples </a>  برای تست کردن کدتان آورده شده است <p>
 
 
 
