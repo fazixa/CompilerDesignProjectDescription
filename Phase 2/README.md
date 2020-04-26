@@ -50,84 +50,87 @@
 جدوال را دریک خروجی به ترتیب شماره خط شروع اسکوپ آنها با فرمت زیر نمایش دهید</p>
 
 input ([get raw]()):
-```javaclass Classes {
-    public static void main(String[] a) {
-    Base b;
-    Derived d;
-    int x;
-      b = new Base();
-     d = new Derived();
-    b = d;
-    System.out.println(b.set(1));
-    System.out.println(b.set(3));
-  }
-}
-
-class Rest implements Nothing{
-
-}
-
-class Base extends Rest implements Face,MyFace{
-  int[] data;
-  private Rest[] d;
-  private int set(int[] x) {
-    data = x;
-    return data;
-  }
-  public int get() {
-    return data;
-  }
-  private int test(){
-
-  while(1)
-      int x;
-
-      int b ;
-      {
-          int t;
-          a = 0;
-          b = 5;
-      }
-      if(true){
-          bool n;
-      {
-      }
-
-      }
-
-      return a + b;
-  }
-
-}
-
-class Derived extends Base {
-
-  public int set(int x, C d) {
-    data = x * 2;
-    {
-                  Base[] t;
-
-        }
-        if (a<0)
-            int a;
-    return data;
-  }
-}
-
-class Hi {
-    private void sayHi(int one, bool two, Hi three, int four){
-    }
-}
-
-interface Face{
-    final int[] a = {1,2};
-    int getFace(int s);
-}
-
-interface MyFace{
-    final String  myFace= ":)";
-}
-
+```java
+1
+2
+3
+4
+5
+6    class Classes {
+7        public static void main(String[] a) {
+8            Base b;
+9            Derived d;
+10            int x;
+11            b = new Base();
+12            d = new Derived();
+13            b = d;
+14            System.out.println(b.set(1));
+15            System.out.println(b.set(3));
+16        }
+17    }
+18
+19    class Rest implements Nothing {
+20
+21    }
+22
+23    class Base extends Rest implements Face, MyFace {
+24        int[] data;
+25        private Rest[] d;
+26        private int set(int[] x) {
+27            data = x;
+28            return data;
+29        }
+30        public int get() {
+31            return data;
+32        }
+33        private int test() {
+34
+35            while (1)
+36                int x;
+37
+38            int b; {
+39                int t;
+40                a = 0;
+41                b = 5;
+42            }
+43            if (true) {
+44                bool n; {}
+45
+46            }
+47
+48            return a + b;
+49        }
+50
+51    }
+52
+53    class Derived extends Base {
+54
+55        public int set(int x, C d) {
+56            data = x * 2; {
+57                Base[] t;
+58
+59            }
+60            if (a < 0)
+61                int a;
+62            return data;
+63        }
+64    }
+65
+66    class Hi {
+67        private void sayHi(int one, bool two, Hi three, int four) {}
+68    }
+69
+70    interface Face {
+71        final int[] a = {
+72            1,
+73            2
+74        };
+75        int getFace(int s);
+76    }
+77
+78    interface MyFace {
+79        final String myFace = ":)";
+80    }
 ```
 output ([get raw]()):
 ```java
