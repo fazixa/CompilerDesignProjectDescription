@@ -251,11 +251,12 @@ public String printItems(){
 
 ```java
 -------------  program : 1  -------------
-Key = class_Base  | Value = Class: (name: Base) (extends : Jkdsjflk | implements: Face, FSsd)
+Key = class_Base  | Value = Class: (name: Base) (extends : Rest | implements: Face, MyFace)
 Key = interface_Face  | Value = Interface: (name: Face)
-Key = class_Rest  | Value = Class: (name: Rest) (extends : Object | implements: Test)
-Key = class_Rest1  | Value = Class: (name: Rest1) (extends : Object)
+Key = interface_MyFace  | Value = Interface: (name: MyFace)
+Key = class_Rest  | Value = Class: (name: Rest) (extends : Object | implements: Nothing)
 Key = mainClass_Classes  | Value = MainClass: (name: Classes)
+Key = class_Hi  | Value = Class: (name: Hi) (extends : Object)
 Key = class_Derived  | Value = Class: (name: Derived) (extends : Base)
 -----------------------------------------
 ```
@@ -265,13 +266,13 @@ Key = class_Derived  | Value = Class: (name: Derived) (extends : Base)
 ```java
 public String toString() {
    String out = "Class: " + "(name: " + this.name + ") " +"(extends : " + parent.name;
-   if(!parents.isEmpty()){
+   if(!interfaces.isEmpty()){
        out +=  " | implements: " ;
        int i ;
-       for ( i = 0 ; i < parents.size() - 1 ; i++ ){
-           out += parents.get(i).name +", ";
+       for ( i = 0 ; i < interfaces.size() - 1 ; i++ ){
+           out += interfaces.get(i).name +", ";
        }
-       out += parents.get(i).name ;
+       out += interfaces.get(i).name ;
    }
    return out +")";
 }
@@ -279,10 +280,10 @@ public String toString() {
 <p dir="rtl"> بنابراین خروجی برای کلاس های مختلف به شکل زیر می شود. </p>
 
 ```java
-Key = class_Base  | Value = Class: (name: Base) (extends : Rest | implements: Face, MyFace)
-Key = class_Rest  | Value = Class: (name: Rest) (extends : Object | implements: Nothing)
-Key = class_Hi  | Value = Class: (name: Hi) (extends : Object)
-Key = class_Derived  | Value = Class: (name: Derived) (extends : Base)
+Class: (name: Base) (extends : Rest | implements: Face, MyFace)
+Class: (name: Rest) (extends : Object | implements: Nothing)
+Class: (name: Hi) (extends : Object)
+Class: (name: Derived) (extends : Base)
 ```
 <br>
 
@@ -295,8 +296,8 @@ public String toString() {
 <p dir="rtl">همچنین خروجی برای اینترفیس های مختلف: </p>
 
 ```java
-Key = interface_Face  | Value = Interface: (name: Face)
-Key = interface_MyFace  | Value = Interface: (name: MyFace)
+Interface: (name: Face)
+Interface: (name: MyFace)
 ```
 <br>
 
@@ -309,7 +310,7 @@ public String toString() {
 <p dir="rtl"> خروجی برای کلاس اصلی: </p>
 
 ```java
-Key = mainClass_Classes  | Value = MainClass: (name: Classes)
+MainClass: (name: Classes)
 ````
 <br>
 
@@ -333,16 +334,33 @@ public String toString(){
 <p dir="rtl"> خروجی برای متد های مختلف:</p>
 
 ```java
-Key = method_main  | Value = Method: (name: main) (returnType: void) (accessModifier: ACCESS_MODIFIER_PUBLIC) (parametersType: [array of [classType = String, isDefined = true] , index: 1] )
+Method: (name: main) (returnType: void) (accessModifier: ACCESS_MODIFIER_PUBLIC) (parametersType: [array of [classType = String, isDefined = true] , index: 1] )
 
-Key = method_set  | Value = Method: (name: set) (returnType: int) (accessModifier: ACCESS_MODIFIER_PRIVATE) (parametersType: [array of int , index: 1] )
+Method: (name: set) (returnType: int) (accessModifier: ACCESS_MODIFIER_PRIVATE) (parametersType: [array of int , index: 1] )
 
+Method: (name: sayHi) (returnType: void) (accessModifier: ACCESS_MODIFIER_PRIVATE) (parametersType: [int , index: 1]  [bool , index: 2]  [[classType = Hi, isDefined = true] , index: 3]  [int , index: 4] )
 
-Key = method_sayHi  | Value = Method: (name: sayHi) (returnType: void) (accessModifier: ACCESS_MODIFIER_PRIVATE) (parametersType: [int , index: 1]  [bool , index: 2]  [[classType = Hi, isDefined = true] , index: 3]  [int , index: 4] )
-
-Key = method_get  | Value = Method: (name: get) (returnType: int) (accessModifier: ACCESS_MODIFIER_PUBLIC)
+Method: (name: get) (returnType: int) (accessModifier: ACCESS_MODIFIER_PUBLIC)
 ```
 <br>
+
+#### FieldItem:
+
+```java
+public String toString(){
+   return "Field: " + "(name: " + name + ") (type: " + type + ") (accessModifier: " + accessModifier + ")";
+}
+```
+<p dir="rtl"> خروجی برای فیلد های مختلف:</p>
+
+```java
+Field: (name: data) (type: array of int) (accessModifier: ACCESS_MODIFIER_PUBLIC)
+Field: (name: d) (type: array of [classType = Rest, isDefined = true]) (accessModifier: ACCESS_MODIFIER_PRIVATE)
+Field: (name: a) (type: array of int) (accessModifier: ACCESS_MODIFIER_PUBLIC)
+Field: (name: myFace) (type: [classType = String, isDefined = true]) (accessModifier: ACCESS_MODIFIER_PUBLIC)
+```
+<br>
+
 
 <h3 dir="rtl">نکات</h3>
 
