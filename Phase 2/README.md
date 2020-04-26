@@ -30,9 +30,9 @@
 <blockquote dir="rtl"><p> می توانید از ساختار های دیگر هم استفاده نمایید </p></blockquote>
 <p dir="rtl">ساختار جدول علائم برای حوزه ها به این صورت است:</p>
 
-![Scopes](http://s11.picofile.com/file/8395066334/Capture_Copy.PNG | width=400)
 
 
+<img src="http://s11.picofile.com/file/8395066334/Capture_Copy.PNG" alt="scopes" width="300"/>
 
 
 <p dir="rtl">
