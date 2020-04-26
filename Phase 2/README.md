@@ -30,7 +30,7 @@
 <blockquote dir="rtl"><p> می توانید از ساختار های دیگر هم استفاده نمایید </p></blockquote>
 <p dir="rtl">ساختار جدول علائم برای حوزه ها به این صورت است:</p>
 
-![enter image description here](http://s11.picofile.com/file/8395066334/Capture_Copy.PNG)
+![Scopes](http://s11.picofile.com/file/8395066334/Capture_Copy.PNG=200x)
 
 
 
