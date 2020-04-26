@@ -48,7 +48,7 @@
 input ([get raw](https://github.com/fazixa/CompilerDesignProjectDescription/blob/master/Phase%202/Samples/input1.mj)):
 ```java
 1	class Classes {
-2		public static void main(String[] a) {
+2		public static void main(String[] args) {
 3			Base b;
 4			Derived d;
 5			int x;
@@ -86,7 +86,7 @@ input ([get raw](https://github.com/fazixa/CompilerDesignProjectDescription/blob
 37				b = 5;
 38			}
 39			if(true){
-40				bool n;
+40				boolean n;
 41			{
 42			}
 43
@@ -112,7 +112,7 @@ input ([get raw](https://github.com/fazixa/CompilerDesignProjectDescription/blob
 63	}
 64
 65	class Hi {
-66		private void sayHi(int one, bool two, Hi three, int four){
+66		private void sayHi(int one, boolean two, Hi three, int four){
 67		}
 68	}
 69
