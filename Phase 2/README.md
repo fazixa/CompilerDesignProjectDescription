@@ -90,7 +90,7 @@ input ([get raw]()):
 37				b = 5;
 38			}
 39			if(true){
-40				bool n;
+40				boolean n;
 41			{
 42			}
 43
@@ -116,7 +116,7 @@ input ([get raw]()):
 63	}
 64
 65	class Hi {
-66		private void sayHi(int one, bool two, Hi three, int four){
+66		private void sayHi(int one, boolean two, Hi three, int four){
 67		}
 68	}
 69
