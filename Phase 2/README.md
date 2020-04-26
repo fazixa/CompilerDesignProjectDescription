@@ -35,11 +35,7 @@
 <img src="http://s11.picofile.com/file/8395066334/Capture_Copy.PNG" alt="scopes" width="500"/>
 
 
-<p dir="rtl">
-در ادامه یک قطعه کد و حوزه های آن و آنچه که باید در symbol table هر حوزه ذخیره شود را مشاهده می کنید.
-<p>
 
-![enter image description here](http://s11.picofile.com/file/8394956326/Capture.PNG)
 
 
 
@@ -49,7 +45,7 @@
 <p dir="rtl">در این فاز ابتدا چند برنامه به زبان Minijava بنویسید سپس هر قطعه کد را به عنوان ورودی دریافت و حوزه های آن را پردازش کنیدوجدول علائم مربوط به آن را بسازید و همه 
 جدوال را دریک خروجی به ترتیب شماره خط شروع اسکوپ آنها با فرمت زیر نمایش دهید</p>
 
-input ([get raw]()):
+input ([get raw](https://github.com/fazixa/CompilerDesignProjectDescription/blob/master/Phase%202/Samples/input1.mj)):
 ```java
 1	class Classes {
 2		public static void main(String[] a) {
@@ -129,7 +125,7 @@ input ([get raw]()):
 76		final String  myFace= ":)";
 77	}
 ```
-output ([get raw]()):
+output ([get raw](https://github.com/fazixa/CompilerDesignProjectDescription/blob/master/Phase%202/Samples/output1.txt)):
 ```java
 -------------  program : 1  -------------
 Key = class_Base  | Value = Class: (name: Base) (extends : Rest | implements: Face, MyFace)
@@ -427,6 +423,7 @@ public String toString() {
 
 <p dir="rtl"> خروجی برای تایپ کلاس مختلف:
 </p>
+
 ```java
 [classType = Derived, isDefined = true]
 [classType = String, isDefined = true]
@@ -453,6 +450,7 @@ array of [classType = String, isDefined = true]
 <br>
 
 <p dir="rtl">برای چاپ accessModifier:</p>
+
 
 ```java
 “ACCESS_MODIFIER_PUBLIC” or “ACCESS_MODIFIER_PRIVATE”
@@ -490,7 +488,7 @@ class Base{
 
 
 
->  <p dir="rtl"> چند نمونه ورودی و خروجی در قسمت <a href="https://github.com/fazixa/CompilerDesignProjectDescription/blob/master/Documentation">Samples </a>  برای تست کردن کدتان آورده شده است <p>
+>  <p dir="rtl"> 2 نمونه ورودی و خروجی در قسمت <a href="https://github.com/fazixa/CompilerDesignProjectDescription/blob/master/Documentation">Samples </a>  برای تست کردن کدتان آورده شده است <p>
 
 
 
@@ -508,3 +506,10 @@ class Base{
 
 <h3 dir="rtl">موارد تحویلی</h3>
 
+<ul dir="rtl">
+<li><p>کد های مربوط به پروژه</p></li>
+<li><p>خروجی دو قطعه کد input3 و input4 که در فولدر Samples قرار دارند</p></li>
+
+
+
+</ul>
