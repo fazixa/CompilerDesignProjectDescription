@@ -509,7 +509,9 @@ class Base{
 <ul dir="rtl">
 <li><p>کد های مربوط به پروژه</p></li>
 <li><p>خروجی دو قطعه کد input3 و input4 که در فولدر Samples قرار دارند</p></li>
-
+<li>
+تمامی فایل های مربوط به پروژه رادر یک فایل فشرده با فرمت Phase2_Sudentnumber1_studentnumber2.zip ارسال نمایید
+</li>
 
 
 </ul>
