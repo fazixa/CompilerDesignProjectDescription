@@ -20,7 +20,7 @@
 <li><p>تعریف  برنامه</p></li>
 <li><p>تعریف کلاس</p></li>
 <li><p>تعریف توابع</p></li>
-<li><p>شروع else , if, for, while و nestedStatement ها</p></li>
+<li><p>شروع else , if,  while و nestedStatement ها</p></li>
 
 > Note
 </ul>
