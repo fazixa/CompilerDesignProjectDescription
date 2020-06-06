@@ -214,6 +214,7 @@ Key = var_two  | Value = Parameter: (name: two) (type: bool) (index: 2)
 
 -------------  Face : 70  -------------
 Key = var_a  | Value = Field: (name: a) (type: array of int) (accessModifier: ACCESS_MODIFIER_PUBLIC)
+Key = method_getFace  | Value = Method: (name: getFace) (returnType: int) (accessModifier: ACCESS_MODIFIER_PUBLIC) (parametersType: [int , index: 1] )
 -----------------------------------------
 
 -------------  MyFace : 75  -------------
@@ -488,7 +489,7 @@ class Base{
 
 
 
->  <p dir="rtl"> 2 نمونه ورودی و خروجی در قسمت <a href="https://github.com/fazixa/CompilerDesignProjectDescription/blob/master/Documentation">Samples </a>  برای تست کردن کدتان آورده شده است <p>
+>  <p dir="rtl"> 2 نمونه ورودی و خروجی در قسمت <a href="https://github.com/fazixa/CompilerDesignProjectDescription/tree/master/Phase%202/Samples">Samples </a>  برای تست کردن کدتان آورده شده است <p>
 
 
 

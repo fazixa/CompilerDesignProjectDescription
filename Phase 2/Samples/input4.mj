@@ -23,7 +23,7 @@ class Someone {
                 System.out.println("oh No :(");
     }
 
-    private Someone giveMeIfUCan(){
+    private Someone getMeIfUCan(){
         while(1)
             int t;
         {
@@ -42,5 +42,5 @@ class WTF implements HowAreYou{
 }
 
 interface HowAreYou{
-     final String sayHowAreYou();
+     String sayHowAreYou();
 }
