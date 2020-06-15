@@ -2,27 +2,34 @@
 <h3 dir="rtl">مقدمه</h3>
 <p dir="rtl">در فاز قبل پروژه به تکمیل جدول علایم و ذخیره موارد مورد نیاز به صورت سازماندهی شده پرداختیم. در فاز سوم پروژه می خواهیم با استفاده از جدول علایم به بررسی خطا های موجود در برنامه بپردازیم. خطا های لغوی و نحوی در فاز قبل پروژه بررسی شده اند بنابراین ما در این فاز خطاهای معنایی را بررسی خواهیم کرد.</p>
 
+
+
+
+> <p dir="rtl"> پیاده سازی فاز قبل در این بخش در اختیار شما قرار داده شده است در صورتی که فاز قبل را پیاده سازی نمودید میتوانید کد خودتان را ادامه دهید و یا از کد آماده استفاده نمایید </p>
+
+> <p dir="rtl"> 4  ارور اول در کد آماده پیاده سازی شده اند. چنانچه از کد آماده استفاده میکنید نیازی به پیاده سازی آنها نیست اما اگر میخواهید کد خودتان را ادامه دهید این 4 ارور را نیز پیاده سازی نمایید .</p>
 <h3 dir="rtl">بررسی خطا</h3>
 <p dir="rtl"></p>
 
 <h3 dir="rtl"> فرمت گزارش خطا</h3>
 <p dir="rtl">خطا های موجود در برنامه را بر اساس فرمت زیر گزارش دهید: </p>
 
+> <p dir="rtl"> line  شماره خط ارور و column  پوزیشن آن را در یک خط نشان میدهد</p>
 <ul dir="rtl">
 <li>تعریف دوباره یک کلاس:</li>
 </ul>
 
 ```
-Error101 : in line [lineNumber] , [className] has been defined already
+Error101 : in line  [line:column] , class [name] has been defined already
 ```
 
 
 <ul dir="rtl">
-<li>  تعریف دوباره متد یا خصیصه در یک کلاس :</li>
+<li>  تعریف دوباره متد در یک کلاس :</li>
 </ul>
 
 ```
-Error102 : in line [lineNumber] , [Name] has been defined already in [className] 
+Error102 : in line  [line:column] , method  [name] has been defined already
 ```
 
 <ul dir="rtl">
@@ -30,14 +37,14 @@ Error102 : in line [lineNumber] , [Name] has been defined already in [className]
 </ul>
 
 ```
-Error103: in line [lineNumber] , [Name] has been defined already  in current scope
+Error103 : in line  [line:column] , var [name] has been defined already
 ```
 <ul dir="rtl">
-<li>عدم وجود متد اصلی در برنامه: </li>
+<li>تعریف دوباره یک خصیه در یک کلاس </li>
 </ul>
 
 ```
-Error104 : Can not find main method  
+Error104 : in line [line:column] , field [name] has been defined already
 ```
 <ul dir="rtl">
 <li>استفاده از یک کلاس تعریف نشده در یک حوزه : </li>
@@ -93,7 +100,7 @@ Error: Class [className] must implement all abstract methods
 ```
 
 <ul dir="rtl">
-<li>ارث بردن از کلاس های   String, Bool, Int</li>
+<li>ارث بردن از کلاس های   String</li>
 </ul>
 
 ```
@@ -141,13 +148,6 @@ h
 h
 ```
 
-<ul dir="rtl">
-<li>عدم تعریف یک متد با نام  : length</li>
-</ul>
-
-```
-h
-```
 
 <ul dir="rtl">
 <li></li>
