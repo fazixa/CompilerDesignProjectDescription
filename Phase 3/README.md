@@ -20,7 +20,7 @@
 </ul>
 
 ```
-Error101 : in line  [line:column] , class [name] has been defined already
+Error101 : in line  [line:column], class [name] has been defined already
 ```
 
 
@@ -37,28 +37,47 @@ Error102 : in line  [line:column] , method  [name] has been defined already
 </ul>
 
 ```
-Error103 : in line  [line:column] , var [name] has been defined already
+Error103 : in line  [line:column], var [name] has been defined already
 ```
 <ul dir="rtl">
 <li>تعریف دوباره یک خصیه در یک کلاس </li>
 </ul>
 
 ```
-Error104 : in line [line:column] , field [name] has been defined already
+Error104 : in line [line:column], field [name] has been defined already
 ```
+> <p dir="rtl">  نکته:  دو نوع متفاوت میتوانند هم نام باشند به عنوان مثال اگر یک فیلد و متد هم اسم باشن مشکلی نیست
+</p>
+
+
+> <p dir="rtl"> نکته: در صورت تعریف دوباره یک کلاس، متد، فیلد یا لوکال اسم آن را عوض میکنیم و به سیمبل تیبل اضافه میکنیم و اسم آن را به این صورت ذخیره میکنیم: name_line_column 
+</p>
+
+> <p dir="rtl">  بعنوان مثال اگر متغییر d   دوباره تعریف شود آن را  به صورت d_34_48   ذخیره می نماییم
+</p>
+
+> <p dir="rtl">نکته:  هر کدام از موارد ذکر شده اگر دوبار تعریف شوند مورد دوم مطرح نیست و فرض میکنیم اصلا وجود ندارد  و  تنها از مورد اول استفاده میشود
+</p>
+
+> <p dir="rtl">  به عنوان مثال اگر یک کلاس دوبار تعریف شده باشد تنها میتوان از کلاس اول استفاده کرد
+</p>
+
+
+
+
 <ul dir="rtl">
 <li>استفاده از یک کلاس تعریف نشده در یک حوزه : </li>
 </ul>
 
 ```
-Error105 : in line [lineNumber] , cannot find  class [className] 
+Error105 : in line [line:column], cannot find  class [className] 
 ```
 <ul dir="rtl">
 <li>استفاده از یک متغیر یا خصیصه تعریف نشده :   </li>
 </ul>
 
 ```
-Error106 : in line [lineNumber] , Can not find Variable [name]
+Error106 : in line [line:column], Can not find Variable [name]
 ```
 <ul dir="rtl">
 <li>وجود دور در ارث بری :</li>
@@ -72,7 +91,7 @@ Error107 : Invalid inheritance [classname1] -> [classname2] -> [classname3] …
 </ul>
 
 ```
-Error210 : in line [lineNumber], ReturnType of this method must be [MethodReturnType]
+Error210 : in line [line:column], ReturnType of this method must be [MethodReturnType]
 ```
 
 <ul dir="rtl">
@@ -80,7 +99,7 @@ Error210 : in line [lineNumber], ReturnType of this method must be [MethodReturn
 </ul>
 
 ```
-Error220: in line [lineNumber], Mismatch arguments.
+Error220: in line [line:column], Mismatch arguments.
 ```
 
 <ul dir="rtl">
@@ -88,7 +107,7 @@ Error220: in line [lineNumber], Mismatch arguments.
 </ul>
 
 ```
-Error 230 : in line [lineNumber] , Incompatible types : [LeftType] can not be converted to [RightType]
+Error 230 : in line [line:column], Incompatible types : [LeftType] can not be converted to [RightType]
 ```
 -----------------------
 <ul dir="rtl">
@@ -104,7 +123,7 @@ Error: Class [className] must implement all abstract methods
 </ul>
 
 ```
-Error: in line [lineNumber], class [ClassName] can not inherits from class [superClassName]
+Error: in line [line:column], class [ClassName] can not inherits from class [superClassName]
 ```
 
 <ul dir="rtl">
@@ -112,7 +131,7 @@ Error: in line [lineNumber], class [ClassName] can not inherits from class [supe
 </ul>
 
 ```
-Error: in line [lineNumber], Only inherited methods can be overridden.
+Error: in line [line:column], only inherited methods can be overridden.
 ```
 
 <ul dir="rtl">
@@ -120,7 +139,7 @@ Error: in line [lineNumber], Only inherited methods can be overridden.
 </ul>
 
 ```
-Error: in line [lineNumber], he access level cannot be more restrictive than the overridden method's access level
+Error: in line [line:column], the access level cannot be more restrictive than the overridden method's access level
 ```
 
 <ul dir="rtl">
@@ -140,6 +159,11 @@ h
 h
 ```
 
+
+
+
+
+
 <ul dir="rtl">
 <li>خروجی متد main  حتما باید void  باشد.</li>
 </ul>
@@ -148,13 +172,21 @@ h
 h
 ```
 
-
 <ul dir="rtl">
-<li></li>
+<li>متد پرایوت یک کلاس در کلاس های دیگر قابل دسترسی می باشد.</li>
 </ul>
 
 ```
 h
+```
+
+
+<p dir="rtl">  برای چاپ کردن ارور ها از ساختار زیر استفاده کنید</p>
+
+```
+public String toString(){
+        return "Error" + type + " : in line " + line + ":" + column + " , " + text;
+    }
 ```
 
 
