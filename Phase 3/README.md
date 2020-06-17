@@ -79,13 +79,14 @@ Error105 : in line [line:column], cannot find  class [className]
 ```
 Error106 : in line [line:column], Can not find Variable [name]
 ```
-<ul dir="rtl">
-<li>وجود دور در ارث بری :</li>
-</ul>
 
-```
-Error107 : Invalid inheritance [classname1] -> [classname2] -> [classname3] …
-```
+
+
+
+---------------------
+
+
+
 <ul dir="rtl">
 <li>عدم تطابق نوع بازگشتی متد با نوع بازگشتی تعریف شده توسط متد:</li>
 </ul>
@@ -109,45 +110,16 @@ Error220: in line [line:column], Mismatch arguments.
 ```
 Error 230 : in line [line:column], Incompatible types : [LeftType] can not be converted to [RightType]
 ```
------------------------
-<ul dir="rtl">
-<li>در صورت  implement کردن یک کلاس باید تمامی متد های این کلاس پیاده سازی شوند :</li>
-</ul>
 
-```
-Error: Class [className] must implement all abstract methods
-```
 
-<ul dir="rtl">
-<li>ارث بردن از کلاس های   String</li>
-</ul>
 
-```
-Error: in line [line:column], class [ClassName] can not inherits from class [superClassName]
-```
-
-<ul dir="rtl">
-<li>تنها توابعی از کلاس پدر که توسط فرزند ارث بری شده اند می توانند override شوند:</li>
-</ul>
-
-```
-Error: in line [line:column], only inherited methods can be overridden.
-```
-
-<ul dir="rtl">
-<li>سطح دسترسی تابع نمی تواند محدودتر از سطح دسترسی تابع override شده باشد:</li>
-</ul>
-
-```
-Error: in line [line:column], the access level cannot be more restrictive than the overridden method's access level
-```
 
 <ul dir="rtl">
 <li>نوع مقدار بازگشتی تابع باید همانند نوع مقدار بازگشتی تابع override شده کلاس پدر باشد:</li>
 </ul>
 
 ```
-h
+Error240: in line [line:column], the return type of the overriding method must be the same as that of the overridden method
 ```
 
 
@@ -156,12 +128,8 @@ h
 </ul>
 
 ```
-h
+Error250: in line [line:column], the parameters of the overriding method must be the same as that of the overridden method
 ```
-
-
-
-
 
 
 <ul dir="rtl">
@@ -169,18 +137,88 @@ h
 </ul>
 
 ```
-h
+Error260: in line [line:column], return type of main method must be void.
 ```
 
+
+
+
+
+-------------------
 <ul dir="rtl">
-<li>متد پرایوت یک کلاس در کلاس های دیگر قابل دسترسی می باشد.</li>
+<li>متد ها و خصیصه های پرایوت یک کلاس در کلاس های دیگر قابل دسترسی نمی باشد.</li>
 </ul>
 
 ```
-h
+Error310: in line [line:column], private methods or variables are not accessible outside of class.
+```
+
+<ul dir="rtl">
+<li>سطح دسترسی تابع نمی تواند محدودتر از سطح دسترسی تابع override شده باشد:</li>
+</ul>
+
+```
+Error320: in line [line:column], the access level cannot be more restrictive than the overridden method's access level
+```
+
+-----------------
+<ul dir="rtl">
+<li>وجود دور در ارث بری :</li>
+</ul>
+
+```
+Error410 : Invalid inheritance [classname1] -> [classname2] -> [classname3] …
 ```
 
 
+<ul dir="rtl">
+<li>در صورت  implement کردن یک کلاس باید تمامی متد های این کلاس پیاده سازی شوند :</li>
+</ul>
+
+```
+Error420: Class [className] must implement all abstract methods
+```
+
+<ul dir="rtl">
+<li>ارث بردن از کلاس های   String</li>
+</ul>
+
+```
+Error430: in line [line:column], class [ClassName] can not inherits from class [superClassName]
+```
+
+
+
+متد پرایوت نمیتواند اورراید شود
+
+
+
+
+
+
+
+
+
+
+
+<ul dir="rtl">
+<li>تنها توابعی از کلاس پدر که توسط فرزند ارث بری شده اند می توانند override شوند:</li>
+</ul>
+
+```
+Error440: in line [line:column], method does not override method from its superclass.
+```
+
+
+
+
+
+
+
+
+
+
+<br>
 <p dir="rtl">  برای چاپ کردن ارور ها از ساختار زیر استفاده کنید</p>
 
 ```
