@@ -180,23 +180,12 @@ Error420: Class [className] must implement all abstract methods
 ```
 
 <ul dir="rtl">
-<li>ارث بردن از کلاس های   String</li>
+<li>ارث بردن از کلاس    String</li>
 </ul>
 
 ```
-Error430: in line [line:column], class [ClassName] can not inherits from class [superClassName]
+Error430: in line [line:column], class [ClassName] can not inherits from class String
 ```
-
-
-
-متد پرایوت نمیتواند اورراید شود
-
-
-
-
-
-
-
 
 
 
