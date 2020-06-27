@@ -132,13 +132,6 @@ Error250: in line [line:column], the parameters of the overriding method must be
 ```
 
 
-<ul dir="rtl">
-<li>خروجی متد main  حتما باید void  باشد.</li>
-</ul>
-
-```
-Error260: in line [line:column], return type of main method must be void.
-```
 
 
 
